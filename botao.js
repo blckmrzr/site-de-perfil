@@ -13,4 +13,3 @@ botaoTema.addEventListener('click', () => {
         botaoTema.textContent = 'Modo Escuro';
     }
 });
-//sim
