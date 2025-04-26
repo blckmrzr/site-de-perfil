@@ -1,0 +1,153 @@
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: clamp(1rem, 0.857rem + 0.381vw, 1.2rem);
+
+}
+
+header{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header, main, footer{
+    font-family: var(--font-family);
+}
+
+h1{
+    color: var(--color-titulo);
+}
+
+
+section{
+    width: 25%;
+    padding-left: 7%;
+    padding-right: 7%;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+button {
+    background-color: transparent;
+    color: var(--color-text);
+    border: 0.125rem solid #ee8f00;
+    border-radius: 1.5rem;
+    padding: 0.625rem 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #c98834;
+    color: white;
+}
+
+#perfilimg{
+    width: 70%;
+    border-radius: 50%;
+}
+
+#titulocard{
+    padding-top: 7rem;
+}
+
+#perfilsection{
+    text-align: center;
+    color: white;/
+}
+
+.icons{
+    width: 7%;
+}
+
+footer {
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-text);
+    text-align: center;
+    padding: 3rem;
+    position: fixed;
+    bottom: 0;
+    width: 94%;
+}
+@media (max-width: 768px) {
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    #mudarTema{
+        margin-top: 0.5rem;
+    }
+    section{
+        width: 75%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    footer {
+        position: relative;
+        width: 83%;
+    }
+    .icons{
+        width: 10%;
+    }
+    #perfilimg{
+        width: 75%;
+        border-radius: 50%;
+    }
+}
+
+:root {
+    --color-titulo: rgb(0, 204, 255);
+    --color-text: #000000;
+    --color-bg: #ffffff;
+    --color-footer-bg: #333;
+    --color-footer-text: #ffffff;
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+body.dark-mode {
+    --color-bg: #121212;
+    --color-text: #f0f0f0;
+    --color-footer-bg: #222;
+    --color-footer-text: #e0e0e0;}
+
+
+.card-perfil {
+    background-color: #f75c03;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: auto;
+}
+
+p {
+    color: var(--color-text);
+}
+
+#perfilbranco {
+    color: var(--color-text);
+}
+
+#branco {
+    color: var(--color-text);
+}
